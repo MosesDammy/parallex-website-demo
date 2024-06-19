@@ -1,0 +1,22 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+}
+li{
+  display: inline-block;
+  font-size: 20px;
+  color: #cfa91e;
+  /* text-decoration: none; */
+  list-style: none;
+}
+li a{
+  font-style: none;
+  text-decoration: none;
+}
