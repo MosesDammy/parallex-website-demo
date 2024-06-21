@@ -3,20 +3,127 @@
   padding: 0px;
   box-sizing: border-box;
   text-decoration: none;
+  background-image: url();
+  /* background: #fff; */
 }
-.navbar{
+
+/* .navbar{
   display: flex;
   align-items: center;
-  gap: 10rem;
+  gap: 5rem; 
+  justify-content: space-between;
+} */
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 200px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index:100 ;
 }
-li{
-  display: inline-block;
-  font-size: 20px;
-  color: #cfa91e;
-  /* text-decoration: none; */
+
+
+.navdiv ul{
+display: flex;
+/* gap: 10px; */
+/* text-decoration: none; */
+/* font: 1em sans-serif; */
+/* color: aquamarine; */
+list-style: none;
+}
+
+.navdiv a{
+  font-family: "poppins";
+  font-size: 17px;
+  color: #221891;
+  line-height:  26px;
+  font-weight: 400;
+  text-decoration: none;
+  margin-left: 30px;
   list-style: none;
 }
-li a{
-  font-style: none;
-  text-decoration: none;
+ul li ul.dropdown li{
+  display: block;
 }
+ul li ul.dropdown{
+  width: 100%;
+  background: #22438c;
+  z-index: 999;
+  display: none;
+}
+ul li a:hover {
+  background: #112C66;
+}
+ul li:hover ul.dropdown {
+display: block;
+}
+.first{
+ min-height: 100vh;
+ width: 100%;
+}
+
+.first img{
+  width: 100%;
+  min-height: 100vh;
+  
+}
+.first::before{
+  content: '';
+  background-image: url(images/Parallex_Personal3ii.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top:0;
+  left: 0;
+
+}
+
+.first{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ .text{
+   position: absolute; 
+  color:white;
+  top: 28%;
+  padding-left: 280px;
+  widows: 100%;
+  text-align: left;
+  font-family: "poppins";
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 62px;
+ }
+
+  .text-2{
+  font-size: 18px;
+  line-height: 31px;  
+  
+  
+ }
+ .text-three{
+  font-size: 14px;
+  font-family: "poppins";
+  font-weight: 300;
+  font-style: italic;
+  padding-top: 20px;
+ }
+
+ .btn-1{
+  color: aqua;
+  font-size: 100px;
+  margin: 0;
+  position: absolute;
+  /* top: 50%; */
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  
+
+ }
